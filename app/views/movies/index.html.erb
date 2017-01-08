@@ -1,0 +1,14 @@
+<div class="main">
+  <div class="container">
+  <h2>Popular Films</h2>
+<% @movies.each do |m| %>
+  <div class="movie">
+    <img src="<%= m.image %>">
+    <h2><%= m.title %></h2>
+    <p><%= m.release_year %></p>
+    <p class="movie-plot">  <%= m.plot %> </p></br>
+    <%= link_to "Learn More", movie_path(m) %>
+  </div>
+<% end %>
+</div>
+</div>
