@@ -12,7 +12,7 @@ gem 'rails', '~> 5.0.1'
 
 # Use sqlite3 as the database for Active Record
 group :development do
-   gem 'sqlite3'    #gem to use in development environment
+   gem 'pg'    #gem to use in development environment
 end
 
 group :production do
